@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=544px,minimum-scale=0.5,maximum-scale=1.0,user-scalable=yes"/>
+        <title>TT2 Skill Tree Simulator</title>
+
+        {% load staticfiles %}
+
+        <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}" />
+        <script src="{% static 'jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static 'skilltree.js' %}"></script>
+    </head>
+    <body>
+        <div class="skilltree">
+            <ul class="tabs">
+                <li class="tab-link current" data-tab="red_tree">Knight</li>
+                <li class="tab-link" data-tab="yellow_tree">Warlord</li>
+                <li class="tab-link" data-tab="blue_tree">Sorcerer</li>
+                <li class="tab-link" data-tab="green_tree">Rogue</li>
+            </ul>
+            <div id="red_tree" class="tab-content current">
+                <div class="skill skill_red skill_middle skill_l1"></div>
+
+                <div class="skill skill_red skill_left skill_l2"></div>
+                <div class="skill skill_red skill_middle skill_l2"></div>
+                <div class="skill skill_red skill_right skill_l2"></div>
+
+                <div class="skill skill_red skill_left skill_l3"></div>
+                <div class="skill skill_red skill_middle skill_l3"></div>
+                <div class="skill skill_red skill_right skill_l3"></div>
+
+                <div class="skill skill_red skill_left skill_l4"></div>
+                <div class="skill skill_red skill_middle skill_l4"></div>
+                <div class="skill skill_red skill_right skill_l4"></div>
+            </div>
+            <div id="yellow_tree" class="tab-content">
+                <div class="skill skill_yellow skill_middle skill_l1"></div>
+
+                <div class="skill skill_yellow skill_left skill_l2"></div>
+                <div class="skill skill_yellow skill_middle skill_l2"></div>
+                <div class="skill skill_yellow skill_right skill_l2"></div>
+
+                <div class="skill skill_yellow skill_left skill_l3"></div>
+                <div class="skill skill_yellow skill_middle skill_l3"></div>
+                <div class="skill skill_yellow skill_right skill_l3"></div>
+
+                <div class="skill skill_yellow skill_left skill_l4"></div>
+                <div class="skill skill_yellow skill_middle skill_l4"></div>
+                <div class="skill skill_yellow skill_right skill_l4"></div>
+            </div>
+            <div id="blue_tree" class="tab-content">
+                <div class="skill skill_blue skill_middle skill_l1"></div>
+
+                <div class="skill skill_blue skill_left skill_l2"></div>
+                <div class="skill skill_blue skill_middle skill_l2"></div>
+                <div class="skill skill_blue skill_right skill_l2"></div>
+
+                <div class="skill skill_blue skill_left skill_l3"></div>
+                <div class="skill skill_blue skill_middle skill_l3"></div>
+                <div class="skill skill_blue skill_right skill_l3"></div>
+
+                <div class="skill skill_blue skill_left skill_l4"></div>
+                <div class="skill skill_blue skill_middle skill_l4"></div>
+                <div class="skill skill_blue skill_right skill_l4"></div>
+            </div>
+            <div id="green_tree" class="tab-content">
+                <div class="skill skill_green skill_middle skill_l1"></div>
+
+                <div class="skill skill_green skill_left skill_l2"></div>
+                <div class="skill skill_green skill_middle skill_l2"></div>
+                <div class="skill skill_green skill_right skill_l2"></div>
+
+                <div class="skill skill_green skill_left skill_l3"></div>
+                <div class="skill skill_green skill_middle skill_l3"></div>
+                <div class="skill skill_green skill_right skill_l3"></div>
+            </div>
+        </div>
+    </body>
+</html>

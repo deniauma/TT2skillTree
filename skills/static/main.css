@@ -1,0 +1,90 @@
+.skilltree{
+    width: 500px;
+    height: 700px;
+    background-color: gray;
+}
+
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+ul.tabs li.current{
+    background: #ededed;
+    color: #222;
+}
+
+.tab-content{
+    display: none;
+    padding: 15px;
+}
+
+.tab-content.current{
+    display: inherit;
+}
+
+#red_tree{
+
+}
+
+.skill{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.skill_red{
+    background-color: red;
+}
+
+.skill_yellow{
+    background-color: yellow;
+}
+
+.skill_blue{
+    background-color: blue;
+}
+
+.skill_green{
+    background-color: green;
+}
+
+.skill_middle{
+    margin-left: 200px;
+}
+
+.skill_left{
+    margin-left: 10px;
+}
+
+.skill_right{
+    margin-left: 400px;
+}
+
+.skill_l1{
+    position: absolute;
+    top: 50px;
+}
+
+.skill_l2{
+    position: absolute;
+    top: 140px;
+}
+
+.skill_l3{
+    position: absolute;
+    top: 230px;
+}
+
+.skill_l4{
+    position: absolute;
+    top: 320px;
+}
