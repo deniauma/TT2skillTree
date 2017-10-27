@@ -8,6 +8,16 @@ $(document).ready(function(){
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
+    })
+    
+    $('.skill_btn').bind('click', function(){
+        console.debug($(this).parent().attr('id'));
 	})
 
+    $('#skill_btn_upgrade').bind('click', function(){
+        var lvl = $('.selected > .skill_lvl').html();
+        lvl++;
+        $('.selected > .skill_lvl').html(lvl++);
+        console.debug(lvl);
+	})
 })
