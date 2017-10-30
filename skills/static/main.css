@@ -1,13 +1,42 @@
+body{
+    font-family: arial;
+}
+
 .skilltree{
-    width: 500px;
+    width: 600px;
     height: 420px;
     background-color: #ededed;
 }
 
 #controls{
-    width: 500px;
+    width: 600px;
     height: 200px;
     background-color: #ededed;
+}
+
+.control{
+    height: 80px;
+    padding-top: 20px;
+    background-color: black;
+    color: white; 
+    font-size: 14px;
+    width: 600px;
+}
+
+.button{
+    color: white;
+}
+
+#reset{
+    float: right;
+    width: 100px;
+    height: 30px;
+    background-color: darkblue;
+}
+
+#sp_used{
+    float: left;
+    padding-left: 20px;
 }
 
 #skill_btn_upgrade{
@@ -16,6 +45,10 @@
     width: 150px;
     height: 60px;
     background-color: rgb(62,164,202);
+}
+
+#skill_btn_upgrade:hover{
+    cursor: pointer;
 }
 
 .btn_upper{
@@ -60,13 +93,9 @@ ul.tabs li.current{
     display: inherit;
 }
 
-#red_tree{
-
-}
-
 .skill{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin-top: 20px;
 }
 
@@ -123,10 +152,14 @@ ul.tabs li.current{
     text-align: right;
     margin-top: 30px;
     margin-right: 2px;
+    font-size: 16px;
+    line-height: 60px;
+    text-shadow: 1px 1px 1px #272727, -1px -1px 1px rgba(167, 167, 167, 0.69);
 }
 
 .skill_btn{
     position: absolute;
     width: 50px;
     height: 50px;
+    font-size: 14px;
 }
