@@ -19,5 +19,17 @@ $(document).ready(function(){
         lvl++;
         $('.selected > .skill_lvl').html(lvl++);
         console.debug(lvl);
-	})
+    })
+
+    $.ajax({
+        method: "GET",
+        url: "getskills/all",
+    })
+    .done(function( msg ) {
+        //console.debug(msg["skills"]);
+        data = msg["skills"];
+        s = JSON.parse(data);
+        console.debug("Test: "+s.length+", "+s[0].pk)
+    });
+
 })

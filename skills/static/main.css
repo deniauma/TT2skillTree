@@ -86,34 +86,34 @@ ul.tabs li.current{
     background-color: green;
 }
 
-.skill_middle{
+.skill_middle, .skill_slot0, .skill_slot2, .skill_slot5, .skill_slot8{
     margin-left: 200px;
 }
 
-.skill_left{
+.skill_left, .skill_slot1, .skill_slot4, .skill_slot7{
     margin-left: 10px;
 }
 
-.skill_right{
+.skill_right, .skill_slot3, .skill_slot6, .skill_slot9{
     margin-left: 400px;
 }
 
-.skill_l1{
+.skill_l1, .skill_slot0{
     position: absolute;
     top: 50px;
 }
 
-.skill_l2{
+.skill_l2, .skill_slot1, .skill_slot2, .skill_slot3{
     position: absolute;
     top: 140px;
 }
 
-.skill_l3{
+.skill_l3, .skill_slot4, .skill_slot5, .skill_slot6{
     position: absolute;
     top: 230px;
 }
 
-.skill_l4{
+.skill_l4, .skill_slot7, .skill_slot8, .skill_slot9{
     position: absolute;
     top: 320px;
 }

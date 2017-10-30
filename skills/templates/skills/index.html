@@ -19,65 +19,36 @@
                 <li class="tab-link" data-tab="green_tree">Rogue</li>
             </ul>
             <div id="red_tree" class="tab-content current">
-                <div id="skill_r11" class="skill skill_red skill_middle skill_l1 selected">
-                    <div class="skill_btn"></div>
-                    <div class="skill_lvl">1</div>
-                </div>
-
-                <div class="skill skill_red skill_left skill_l2"></div>
-                <div class="skill skill_red skill_middle skill_l2"></div>
-                <div class="skill skill_red skill_right skill_l2"></div>
-
-                <div class="skill skill_red skill_left skill_l3"></div>
-                <div class="skill skill_red skill_middle skill_l3"></div>
-                <div class="skill skill_red skill_right skill_l3"></div>
-
-                <div class="skill skill_red skill_left skill_l4">
-                    <div class="skill_lvl">19</div>
-                </div>
-                <div class="skill skill_red skill_middle skill_l4"></div>
-                <div class="skill skill_red skill_right skill_l4"></div>
+                {% for skill in red %}
+                    <div id="{{skill.id}}" class="skill skill_red skill_slot{{skill.slot}} {% if forloop.first %}selected{% endif %}">
+                        <div class="skill_btn"></div>
+                        <div class="skill_lvl">0</div>
+                    </div>
+                {% endfor %}
             </div>
             <div id="yellow_tree" class="tab-content">
-                <div class="skill skill_yellow skill_middle skill_l1"></div>
-
-                <div class="skill skill_yellow skill_left skill_l2"></div>
-                <div class="skill skill_yellow skill_middle skill_l2"></div>
-                <div class="skill skill_yellow skill_right skill_l2"></div>
-
-                <div class="skill skill_yellow skill_left skill_l3"></div>
-                <div class="skill skill_yellow skill_middle skill_l3"></div>
-                <div class="skill skill_yellow skill_right skill_l3"></div>
-
-                <div class="skill skill_yellow skill_left skill_l4"></div>
-                <div class="skill skill_yellow skill_middle skill_l4"></div>
-                <div class="skill skill_yellow skill_right skill_l4"></div>
+                {% for skill in yellow %}
+                    <div id="{{skill.id}}" class="skill skill_yellow skill_slot{{skill.slot}} {% if forloop.first %}selected{% endif %}">
+                        <div class="skill_btn"></div>
+                        <div class="skill_lvl">0</div>
+                    </div>
+                {% endfor %}
             </div>
             <div id="blue_tree" class="tab-content">
-                <div class="skill skill_blue skill_middle skill_l1"></div>
-
-                <div class="skill skill_blue skill_left skill_l2"></div>
-                <div class="skill skill_blue skill_middle skill_l2"></div>
-                <div class="skill skill_blue skill_right skill_l2"></div>
-
-                <div class="skill skill_blue skill_left skill_l3"></div>
-                <div class="skill skill_blue skill_middle skill_l3"></div>
-                <div class="skill skill_blue skill_right skill_l3"></div>
-
-                <div class="skill skill_blue skill_left skill_l4"></div>
-                <div class="skill skill_blue skill_middle skill_l4"></div>
-                <div class="skill skill_blue skill_right skill_l4"></div>
+                {% for skill in blue %}
+                    <div id="{{skill.id}}" class="skill skill_blue skill_slot{{skill.slot}} {% if forloop.first %}selected{% endif %}">
+                        <div class="skill_btn"></div>
+                        <div class="skill_lvl">0</div>
+                    </div>
+                {% endfor %}
             </div>
             <div id="green_tree" class="tab-content">
-                <div class="skill skill_green skill_middle skill_l1"></div>
-
-                <div class="skill skill_green skill_left skill_l2"></div>
-                <div class="skill skill_green skill_middle skill_l2"></div>
-                <div class="skill skill_green skill_right skill_l2"></div>
-
-                <div class="skill skill_green skill_left skill_l3"></div>
-                <div class="skill skill_green skill_middle skill_l3"></div>
-                <div class="skill skill_green skill_right skill_l3"></div>
+                {% for skill in green %}
+                    <div id="{{skill.id}}" class="skill skill_green skill_slot{{skill.slot}} {% if forloop.first %}selected{% endif %}">
+                        <div class="skill_btn"></div>
+                        <div class="skill_lvl">0</div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
         <div id="controls">
