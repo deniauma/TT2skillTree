@@ -13,15 +13,16 @@
     <body>
         <div class="skilltree">
             <ul class="tabs">
-                <li class="tab-link current" data-tab="red_tree">Knight lvl <span id="knight_lvl">0</span></li>
-                <li class="tab-link" data-tab="yellow_tree">Warlord lvl <span id="warlord_lvl">0</span></li>
-                <li class="tab-link" data-tab="blue_tree">Sorcerer lvl <span id="sorcerer_lvl">0</span></li>
-                <li class="tab-link" data-tab="green_tree">Rogue lvl <span id="rogue_lvl">0</span></li>
+                <li id="tab-red" class="tab-link current" data-tab="red_tree">Knight lvl <span id="knight_lvl">0</span></li>
+                <li id="tab-yellow" class="tab-link" data-tab="yellow_tree">Warlord lvl <span id="warlord_lvl">0</span></li>
+                <li id="tab-blue" class="tab-link" data-tab="blue_tree">Sorcerer lvl <span id="sorcerer_lvl">0</span></li>
+                <li id="tab-green" class="tab-link" data-tab="green_tree">Rogue lvl <span id="rogue_lvl">0</span></li>
             </ul>
             <div id="red_tree" class="tab-content current">
                 {% for skill in red %}
                     <div id="{{skill.id}}" class="skill skill_red skill_slot{{skill.slot}} {% if forloop.first %}selected{% endif %}">
-                        <div class="skill_btn">{{skill.name}}</div>
+                        <img src="{% static 'red_slot0.png' %}" width="68" height="68">
+                        <div class="skill_btn"></div>
                         <div class="skill_lvl">0</div>
                     </div>
                 {% endfor %}

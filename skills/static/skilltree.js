@@ -34,7 +34,17 @@ function display_skill(){
     var s = get_selected_skill();
     $('#skill_title').html(s.fields.name);
     $('#skill_effect1').html(s.fields['bonus_effect1_lvl'+s.lvl]);
-    $('#skill_effect2').html(s.fields.bonus_effect2_lvl1);
+    if(s.fields['bonus_effect1_lvl'+s.lvl] > 0){
+        $('#skill_effect1').html(s.fields['bonus_effect1_lvl'+s.lvl]);
+    } else {
+        $('#skill_effect1').html("");
+    }
+    if(s.fields['bonus_effect2_lvl'+s.lvl] > 0){
+        $('#skill_effect2').html(s.fields['bonus_effect2_lvl'+s.lvl]);
+    } else {
+        $('#skill_effect2').html("");
+    }
+    
 }
 
 function upgrade_skill(){
@@ -114,6 +124,7 @@ $(document).ready(function(){
         console.debug("Test: "+s.length+", "+s[0].pk)
         skills = s;
         init_build();
+        $('.tab-link.current').click();
     });
 
 })
