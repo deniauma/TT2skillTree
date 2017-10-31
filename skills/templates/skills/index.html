@@ -28,7 +28,7 @@
             </div>
             <div id="yellow_tree" class="tab-content">
                 {% for skill in yellow %}
-                    <div id="{{skill.id}}" class="skill skill_yellow skill_slot{{skill.slot}} {% if forloop.first %}selected{% endif %}">
+                    <div id="{{skill.id}}" class="skill skill_yellow skill_slot{{skill.slot}}">
                         <div class="skill_btn">{{skill.name}}</div>
                         <div class="skill_lvl">0</div>
                     </div>
@@ -36,7 +36,7 @@
             </div>
             <div id="blue_tree" class="tab-content">
                 {% for skill in blue %}
-                    <div id="{{skill.id}}" class="skill skill_blue skill_slot{{skill.slot}} {% if forloop.first %}selected{% endif %}">
+                    <div id="{{skill.id}}" class="skill skill_blue skill_slot{{skill.slot}}">
                         <div class="skill_btn">{{skill.name}}</div>
                         <div class="skill_lvl">0</div>
                     </div>
@@ -44,7 +44,7 @@
             </div>
             <div id="green_tree" class="tab-content">
                 {% for skill in green %}
-                    <div id="{{skill.id}}" class="skill skill_green skill_slot{{skill.slot}} {% if forloop.first %}selected{% endif %}">
+                    <div id="{{skill.id}}" class="skill skill_green skill_slot{{skill.slot}}">
                         <div class="skill_btn">{{skill.name}}</div>
                         <div class="skill_lvl">0</div>
                     </div>

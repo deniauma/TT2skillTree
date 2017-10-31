@@ -23,6 +23,11 @@ body{
     width: 600px;
 }
 
+#skill_desc{
+    float: left;
+    width: 200px;
+}
+
 .button{
     color: white;
 }
